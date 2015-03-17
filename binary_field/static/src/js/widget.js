@@ -48,18 +48,18 @@ openerp.binary_field = function (instance) {
         }});
 
 
-    instance.web_kanban.KanbanRecord.include({
-        kanban_image: function(model, field, id, cache, options) {
-            console.log(this.record[field].value)
-            if (this.record[field]
-                && this.record[field].value
-                && instance.web.form.is_url(this.record[field].value)
-            ) {
-                return this.record[field].value;
-            } else {
-                return this._super();
-            }
-        },
-    })
+    // instance.web_kanban.KanbanRecord.include({
+    //     kanban_image: function(model, field, id, cache, options) {
+    //         console.log(this.record[field].value)
+    //         if (this.record[field]
+    //             && this.record[field].value
+    //             && instance.web.form.is_url(this.record[field].value)
+    //         ) {
+    //             return this.record[field].value;
+    //         } else {
+    //             return this._super();
+    //         }
+    //     },
+    // })
 
 };
