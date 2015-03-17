@@ -37,8 +37,9 @@ coverage.xml
 # Translations
 *.mo
 
-# Pycharm
+# IDE
 .idea
+*.swp
 
 # Mr Developer
 .mr.developer.cfg
@@ -53,4 +54,3 @@ docs/_build/
 
 # Backup files
 *~
-*.swp
